@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Вольтижировка — подготовительные упражнения к обязательной программе Уровень 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f8f6f2;
+            color: #1e293b;
+            line-height: 1.4;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 32px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #64748b;
+        }
+
+        .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .exercise-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border: 1px solid #e9e4dc;
+        }
+
+        .exercise-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+        }
+
+        .exercise-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+        }
+
+        .exercise-card .info {
+            padding: 1.2rem 1.2rem 1.5rem;
+        }
+
+        .exercise-card .info h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e3dad1;
+            color: #2c3e50;
+            padding: 0.25rem 1rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 32px;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+            text-align: center;
+            color: #64748b;
+        }
+
+        .footer .author {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #b45347;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer .rights {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer .divider {
+            width: 60px;
+            height: 2px;
+            background: #d4cdc0;
+            margin: 1rem auto;
+        }
+
+        .footer .note {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            .exercises-grid {
+                gap: 1rem;
+            }
+            .footer {
+                padding: 1.5rem;
+            }
+            .exercise-card img {
+                height: 160px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            body {
+                padding: 0.75rem;
+            }
+            .exercise-card img {
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Вольтижировка</h1>
+        <p>Подготовительные упражнения к Обязательной программе Уровень 1</p>
+    </div>
+
+    <div class="exercises-grid">
+        <a href="zaskok.html" class="exercise-card">
+            <img src="jump1.jpg" alt="Заскок">
+            <div class="info">
+                <h3>Заскок</h3>
+                <span class="badge">01-07</span>
+            </div>
+        </a>
+
+        <a href="basic-seat.html" class="exercise-card">
+            <img src="ball1.jpg" alt="Базовый сед">
+            <div class="info">
+                <h3>Базовый сед</h3>
+                <span class="badge">08-11</span>
+            </div>
+        </a>
+
+        <a href="swallow.html" class="exercise-card">
+            <img src="swallow1.jpg" alt="Ласточка">
+            <div class="info">
+                <h3>Ласточка</h3>
+                <span class="badge">12-17</span>
+            </div>
+        </a>
+
+        <a href="mill.html" class="exercise-card">
+            <img src="mill1.jpg" alt="Мельница">
+            <div class="info">
+                <h3>Мельница</h3>
+                <span class="badge">18-20</span>
+            </div>
+        </a>
+
+        <a href="plank.html" class="exercise-card">
+            <img src="plankdown1.jpg" alt="Планка лицом вниз">
+            <div class="info">
+                <h3>Планка лицом вниз (тачка)</h3>
+                <span class="badge">21-24</span>
+            </div>
+        </a>
+
+        <a href="plank-back.html" class="exercise-card">
+            <img src="plankback1.jpg" alt="Планка лицом назад">
+            <div class="info">
+                <h3>Планка лицом назад</h3>
+                <span class="badge">25-28</span>
+            </div>
+        </a>
+
+        <a href="kneeling-stand.html" class="exercise-card">
+            <img src="kneeling1.jpg" alt="Стойка на коленях">
+            <div class="info">
+                <h3>Стойка на коленях</h3>
+                <span class="badge">29</span>
+            </div>
+        </a>
+
+        <a href="landing.html" class="exercise-card">
+            <img src="landing1.jpg" alt="Приземление">
+            <div class="info">
+                <h3>Приземление</h3>
+                <span class="badge">30-33</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="footer">
+        <div class="author">Ясмин Гипперих</div>
+        <div class="rights">© Jasmin Gipperich · Все права защищены</div>
+        <div class="divider"></div>
+        <div class="note">
+            Подготовительные упражнения к Обязательной программе Уровень 1<br>
+            Методическое пособие по базовым упражнениям вольтижировки
+        </div>
+    </div>
+</div>
+</body>
+</html>
